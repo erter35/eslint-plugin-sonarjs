@@ -32,4 +32,4 @@ const ruleTesterScript = new RuleTester({
   parserOptions: { ecmaVersion: 2018, sourceType: 'script' },
 });
 
-export { ruleTester, ruleTesterScript, RuleTester };
+
