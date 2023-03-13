@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 14.x
       - run: yarn && yarn build 
-      - run: yarn test --coverage --testResultProcessor jest-sonar-reporter
+      - run: yarn test --coverage --testResultsProcessor jest-sonar-reporter
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
