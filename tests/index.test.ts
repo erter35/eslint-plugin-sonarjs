@@ -31,7 +31,12 @@ it('should declare all rules in recommended config', () => {
   expect(Object.keys(configs.recommended.rules!)).toHaveLength(existingRules.length);
 });
 
-
+it('should declare all rules', () => {
+  existingRules.forEach(rule => {
+    expect(rules).toHaveProperty(rule);
+  });
+  expect(Object.keys(rules)).toHaveLength(existingRules.length);
+});
 
 it('should document all rules', () => {
   const root = path.join(__dirname, '../');
