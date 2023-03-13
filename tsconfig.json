@@ -7,7 +7,6 @@
     "noImplicitAny": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noEmit": true,
     "allowSyntheticDefaultImports": true
   },
   "include": ["ruling", "src", "tests", "typings"],
